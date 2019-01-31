@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018/9 | haibiscuit</title>
+  <title>git操作记录(一篇就够了) | haibiscuit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="study about java golang database and so on">
-<meta name="keywords" content="java golang database">
-<meta property="og:type" content="website">
-<meta property="og:title" content="haibiscuit">
-<meta property="og:url" content="http://yoursite.com/archives/2018/09/index.html">
+  <meta name="description" content="以下都是亲自操作后总结的，如果转载请标明是haibiscuit的博客，尊重我的劳动成果推荐学习git很好的网站https://www.breakyizhan.com/git/216.html 一：一般操作　　　　(1).如果是第一次操作(需求一)　　　　git init">
+<meta name="keywords" content="-git使用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git操作记录(一篇就够了)">
+<meta property="og:url" content="http://yoursite.com/2019/01/31/git操作记录-一篇就够了/index.html">
 <meta property="og:site_name" content="haibiscuit">
-<meta property="og:description" content="study about java golang database and so on">
+<meta property="og:description" content="以下都是亲自操作后总结的，如果转载请标明是haibiscuit的博客，尊重我的劳动成果推荐学习git很好的网站https://www.breakyizhan.com/git/216.html 一：一般操作　　　　(1).如果是第一次操作(需求一)　　　　git init">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-01-31T14:59:00.749Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="haibiscuit">
-<meta name="twitter:description" content="study about java golang database and so on">
+<meta name="twitter:title" content="git操作记录(一篇就够了)">
+<meta name="twitter:description" content="以下都是亲自操作后总结的，如果转载请标明是haibiscuit的博客，尊重我的劳动成果推荐学习git很好的网站https://www.breakyizhan.com/git/216.html 一：一般操作　　　　(1).如果是第一次操作(需求一)　　　　git init">
   
     <link rel="alternative" href="/atom.xml" title="haibiscuit" type="application/atom+xml">
   
@@ -158,60 +159,279 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-git操作记录-一篇就够了" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/06/博客引言/" class="archive-article-date">
-  	<time datetime="2018-09-06T04:15:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-06</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/06/博客引言/">博客引言</a>
+    <h1 class="article-title" itemprop="name">
+      git操作记录(一篇就够了)
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/01/31/git操作记录-一篇就够了/" class="archive-article-date">
+  	<time datetime="2019-01-31T14:55:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<p>以下都是亲自操作后总结的，如果转载请标明是haibiscuit的博客，尊重我的劳动成果<br>推荐学习git很好的网站<br><a href="https://www.breakyizhan.com/git/216.html" target="_blank" rel="noopener">https://www.breakyizhan.com/git/216.html</a></p>
+<p>一：一般操作<br>　　　　(1).如果是第一次操作(需求一)<br>　　　　git init　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　#初始化本地仓库<br>　　　　git remote add origin <a href="https://username:password@github.com/huzhicheng/test__11.git" target="_blank" rel="noopener">https://username:password@github.com/huzhicheng/test__11.git</a>　　　　　　　　　　　#本地仓库与远程仓库建立联系<br>　　　　git pull                                                                                     #先拉取远程仓库内容，即版本更新(很重要)<br>　　　　//或者git fetch –all &amp;&amp; git reset –hard origin/master &amp;&amp; git pull                       　　　#在修改前远程强制覆盖本地代码(注意本地内容会被覆盖，在执行此命令前本地不要有内容)<br>　　　　git status                                                                                   #查看本地仓库状态<br>　　　　git add README.md　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　#将README.md文件添加到暂存区<br>　　　　git commit -m “first commit”　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　#将暂存区内容保存到本地<br>　　　　git push -u origin master　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　#推送本地修改到远程master分区</p>
+<p>二：参与已有项目<br>　　　　需求说明:远程仓库已经存在，并且仓库中已有文件<br>　　　　具体操作:<br>               (1).方式一<br>               git clone <a href="https://username:password@github.com/haibiscuit/AioSocket.git" target="_blank" rel="noopener">https://username:password@github.com/haibiscuit/AioSocket.git</a>                 #此时不会覆盖本地新增的内容<br>           cd AioSocket　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　                                      #直接进入项目目录便可以操作<br>　　　　　　　　　　　　　　　(2).方式二<br>　　　　　　　　　　　　　　　git init                                                                                #新建仓库<br>             git remote add origin <a href="https://username:password@github.com/huzhicheng/test__11.git" target="_blank" rel="noopener">https://username:password@github.com/huzhicheng/test__11.git</a>     　#本地与远程仓库建立关联<br>               git fetch –all &amp;&amp; git reset –hard origin/master &amp;&amp; git pull　　　　　　　　　　　　　　　　　　　　　　　　　　　#强制覆盖本地仓库，即可操作<br>　　　　　　　　　　　　　　　<br>三：远程代码强制覆盖本地代码(可以解决本地与远程版本的冲突)<br>　　　　需求说明：用于远程与本地版本的同步<br>　　　　具体操作：<br>　　　　　　　　　　　　　　　(1).方式一<br>　　　　　　　　　　　　　　　　　　　　git强制覆盖：<br>            git fetch –all　　　　　　　　　　　　　　　　　　　　　　　　#从远程获取最新版本到本地，不会自动merge<br>            git reset –hard origin/master　　　　　　　　　#回退到远程的版本，不执行这一步本地看不到拉取的内容<br>            git pull　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　#这一步非常重要，从远程获取最新版本并merge到本地(弥补fetch的缺点)</p>
+<p>　　　　　　　　　　　　　　　(2).方式二<br>　　　　　　　　　　　　　　　　　　　　git强制覆盖本地命令（单条执行）：<br>    　　　　　　　　　　　　git fetch –all &amp;&amp; git reset –hard origin/master &amp;&amp; git pull</p>
+<p>四：本地仓库与远程仓库的回退技巧<br>        (1)．git reset<br>　　　　　　　　      　适用场景:恢复到之前提交的版本，且那个版本之后的提交都不要了<br>　　　　　　　　<br>                标准格式:<br>        git reset –soft|–mixed|–hard &lt;commit_id&gt;    #一般选择–hard参数，源码会回退到某个版本,commit和index 都会回退到某个版本</p>
+<pre><code>        示例:
+git reset --hard HEAD^　　　　　　#本地回退到上一个版本
+        git push -f                 #强制推送，使远程版本回退(不推荐)
+</code></pre><p>　　　　　　　　　　　　　　　　<br>                (2).git revert<br>                原理:通过反做在当前版本的下面再创建新的版本<br>　　　　　　　         需求说明:想要恢复之前的版本，又想保留目标版本之后的版本</p>
+<pre><code>标准格式:
+</code></pre><p> 　　　　           git revert &lt;commit_id&gt;</p>
+<pre><code>        示例:
+git revert HEAD　　　　　　　　　　　　　　　#回退到上一个版本(用着很不爽)
+</code></pre><p>　　　　　　　　　　　　　　　　git commit -m “版本号”　　　<br>        git push</p>
+<p>　　　　　　　　　       补充:<br>                git revert HEAD        #撤销前一次提交<br>        git revert HEAD^       #撤销前前一次提交<br>        git revert HEAD~n      #撤回前n+1次提交</p>
+<p>五：本地仓库与远程仓库创建关联和移除关联<br>    (1).本地仓库与远程仓库创建关联<br>    git remote add origin <a href="https://username:password@github.com/huzhicheng/test__11.git" target="_blank" rel="noopener">https://username:password@github.com/huzhicheng/test__11.git</a></p>
+<p>　　　　　　　　(2).本地仓库与远程仓库取消关联<br>　　　　　　　　git remote remove origin</p>
+<p>六：本地仓库与远程仓库的版本信息查看(在修改本地仓库时先查看版本信息)<br>        (1).本地仓库的版本信息查看<br>　　　　　　　　　　　　git log      #简便的方式<br>　　　　　　　　　　　　git reflog   #打印更加详细</p>
+<p>　　　　　　　　(2).远程仓库的版本信息查看<br>　　　　　　　　　　　　git log origin/master -n 3　　　　#打印三条版本的日志</p>
+<p>七：撤销暂存区修改<br>    1.如果未放入暂存区(即未使用git add命令)<br>    git checkout –filename<br>    //或是放弃所有的修改<br>    git  checkout</p>
+<pre><code>2.已经放入暂存区，从暂存区移除
+git reset HEAD filename
+//或是撤销所有的暂存区的内容
+git rm --cached file
+
+(接着使用第一步的git checkout --filename)
+</code></pre><p>八：分支操作<br>        (1).创建分支 :不同分支上的操作互不影响 （master只是git为你默认创建的一个分支，和自己创建的一样，只是名字不同）</p>
+<pre><code>git branch &lt;branch-name&gt; //创建分支  
+
+(2).推送到远程服务器(即，使本地主机上的指针推送到远程主机)   
+git push origin &lt;branch-name&gt;   
+
+
+(3). 查看不同的分支
+
+git branch -a  //查看本地和远程的所有分支  
+git branch -r //查看远程分支  
+git branch -l //查看本地分支  
+git branch -v //查看每一个分支的最后一次提交  
+git branch --merged //查看哪些分支已经合并到当前分支 --no  
+
+
+(4).查看各个分支当前所指对象
+
+git log --oneline --decorate  
+
+(5). 切换分支
+
+git checkout &lt;branch-name&gt;  
+
+
+git checkout -b &lt;branch-name&gt; //相当于两条命令，一条创建，一条切换  
+git checkout -b issue53 //创建 issue53分支并切换  
+
+(6). 合并分支
+
+ git merge &lt;branch-name&gt;  //将当前所在的分支和 &lt;branch-name&gt;合并 ，简单将指针向前推进（fast-forward）  
+★合并有冲突的分支：按上面所述命令合并后，有冲突的文件会以未合并状态（unmerged）标识出来,使用git status 查看,然后手动解决，解决后用git add标示已解决
+ git status  
+ git add  
+
+(7).删除分支
+
+git branch -d hotfix  //对于已合并的分支，删除分支hotfix  
+git banch -D hotfix //  对于未合并的分支 ，强行删除分支  
+
+(8). 推送 ：将代码推送到远程服务器上
+
+git push &lt;remote-name&gt; &lt;branch-name&gt;  
+git push origin master //推送到远程的origin服务器的master分支上  
+git push origin &lt;local branch-name&gt;:&lt;remote branch-name&gt; //本地和服务器上的分支名不同  
+git push origin servefix:remote-server //将本地的serverfix推送到远程的origin的remote-server上  
+
+(9). 拉取
+
+git pull //相当于git fetch  然后 git merge  
+
+
+(10).跟踪分支
+
+             ★从远程服务器上检出本地分支会自动创建一个跟踪分支（上游分支），git pull就是根据跟踪分支来向那个分支抓取
+
+              ★检出并创建分支和其快捷方式
+
+git checkout -b &lt;local branch-name&gt; &lt;remote-name&gt;/&lt;branch-name&gt;  
+
+git checkout --track &lt;remote-name&gt;/&lt;branch-name&gt; //创建并检出分支的快捷方式  
+i.e
+
+git checkout --track origin/develop  
+
+
+(11). 删除远程分支
+
+git push origin --delete serverfix //删除远程分支serverfix  
+</code></pre><p>九：经验总结<br>　　　　　　(1).在使用git push -u origin master时本地版本需要和远程仓库的版本一致，否则不能提交信息</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-FirstBlog</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">-git使用</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/01/31/git操作记录-一篇就够了/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2018/09/06/博客引言/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">博客引言</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/2019/01/31/git操作记录-一篇就够了/",
+  owner: 'haibiscuit',
+  repo: 'Myblog.comments',
+  oauth: {
+    client_id: '7a7aaf272c891d194cad',
+    client_secret: '97c3d22d561f8dab7c8f928151480702fc3d8dcd',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -234,8 +454,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
