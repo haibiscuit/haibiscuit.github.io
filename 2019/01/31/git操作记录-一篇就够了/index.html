@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>git操作记录(一篇就够了) | haibiscuit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="以下都是亲自操作后总结的，如果转载请标明是haibiscuit的博客，尊重我的劳动成果 推荐学习git很好的网站 https://www.breakyizhan.com/git/216.html   一：一般操作　　　　(1).如果是第一次操作(需求一)　　　　git init">
+  <meta name="description" content="以下都是亲自操作后总结的，如果转载请标明是haibiscuit的博客，尊重我的劳动成果推荐学习git很好的网站https://www.breakyizhan.com/git/216.html">
 <meta name="keywords" content="-git使用">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git操作记录(一篇就够了)">
 <meta property="og:url" content="http://yoursite.com/2019/01/31/git操作记录-一篇就够了/index.html">
 <meta property="og:site_name" content="haibiscuit">
-<meta property="og:description" content="以下都是亲自操作后总结的，如果转载请标明是haibiscuit的博客，尊重我的劳动成果 推荐学习git很好的网站 https://www.breakyizhan.com/git/216.html   一：一般操作　　　　(1).如果是第一次操作(需求一)　　　　git init">
+<meta property="og:description" content="以下都是亲自操作后总结的，如果转载请标明是haibiscuit的博客，尊重我的劳动成果推荐学习git很好的网站https://www.breakyizhan.com/git/216.html">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-31T15:02:09.157Z">
+<meta property="og:updated_time" content="2019-02-27T11:02:50.108Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git操作记录(一篇就够了)">
-<meta name="twitter:description" content="以下都是亲自操作后总结的，如果转载请标明是haibiscuit的博客，尊重我的劳动成果 推荐学习git很好的网站 https://www.breakyizhan.com/git/216.html   一：一般操作　　　　(1).如果是第一次操作(需求一)　　　　git init">
+<meta name="twitter:description" content="以下都是亲自操作后总结的，如果转载请标明是haibiscuit的博客，尊重我的劳动成果推荐学习git很好的网站https://www.breakyizhan.com/git/216.html">
   
     <link rel="alternative" href="/atom.xml" title="haibiscuit" type="application/atom+xml">
   
@@ -179,12 +179,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-以下都是亲自操作后总结的，如果转载请标明是haibiscuit的博客，尊重我的劳动成果
-推荐学习git很好的网站
-https://www.breakyizhan.com/git/216.html
-
-
+        <p>以下都是亲自操作后总结的，如果转载请标明是haibiscuit的博客，尊重我的劳动成果<br>推荐学习git很好的网站<br><a href="https://www.breakyizhan.com/git/216.html" target="_blank" rel="noopener">https://www.breakyizhan.com/git/216.html</a></p>
+<a id="more"></a>
 <p>一：一般操作<br>　　　　(1).如果是第一次操作(需求一)<br>　　　　git init　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　#初始化本地仓库<br>　　　　git remote add origin <a href="https://username:password@github.com/huzhicheng/test__11.git" target="_blank" rel="noopener">https://username:password@github.com/huzhicheng/test__11.git</a>　　　　　　　　　　　#本地仓库与远程仓库建立联系<br>　　　　git pull                                                                                     #先拉取远程仓库内容，即版本更新(很重要)<br>　　　　//或者git fetch –all &amp;&amp; git reset –hard origin/master &amp;&amp; git pull                       　　　#在修改前远程强制覆盖本地代码(注意本地内容会被覆盖，在执行此命令前本地不要有内容)<br>　　　　git status                                                                                   #查看本地仓库状态<br>　　　　git add README.md　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　#将README.md文件添加到暂存区<br>　　　　git commit -m “first commit”　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　#将暂存区内容保存到本地<br>　　　　git push -u origin master　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　#推送本地修改到远程master分区</p>
 <p>二：参与已有项目<br>　　　　需求说明:远程仓库已经存在，并且仓库中已有文件<br>　　　　具体操作:<br>               (1).方式一<br>               git clone <a href="https://username:password@github.com/haibiscuit/AioSocket.git" target="_blank" rel="noopener">https://username:password@github.com/haibiscuit/AioSocket.git</a>                 #此时不会覆盖本地新增的内容<br>           cd AioSocket　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　                                      #直接进入项目目录便可以操作<br>　　　　　　　　　　　　　　　(2).方式二<br>　　　　　　　　　　　　　　　git init                                                                                #新建仓库<br>             git remote add origin <a href="https://username:password@github.com/huzhicheng/test__11.git" target="_blank" rel="noopener">https://username:password@github.com/huzhicheng/test__11.git</a>     　#本地与远程仓库建立关联<br>               git fetch –all &amp;&amp; git reset –hard origin/master &amp;&amp; git pull　　　　　　　　　　　　　　　　　　　　　　　　　　　#强制覆盖本地仓库，即可操作<br>　　　　　　　　　　　　　　　<br>三：远程代码强制覆盖本地代码(可以解决本地与远程版本的冲突)<br>　　　　需求说明：用于远程与本地版本的同步<br>　　　　具体操作：<br>　　　　　　　　　　　　　　　(1).方式一<br>　　　　　　　　　　　　　　　　　　　　git强制覆盖：<br>            git fetch –all　　　　　　　　　　　　　　　　　　　　　　　　#从远程获取最新版本到本地，不会自动merge<br>            git reset –hard origin/master　　　　　　　　　#回退到远程的版本，不执行这一步本地看不到拉取的内容<br>            git pull　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　#这一步非常重要，从远程获取最新版本并merge到本地(弥补fetch的缺点)</p>
 <p>　　　　　　　　　　　　　　　(2).方式二<br>　　　　　　　　　　　　　　　　　　　　git强制覆盖本地命令（单条执行）：<br>    　　　　　　　　　　　　git fetch –all &amp;&amp; git reset –hard origin/master &amp;&amp; git pull</p>
